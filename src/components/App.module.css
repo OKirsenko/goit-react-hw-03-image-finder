@@ -4,3 +4,8 @@
   grid-gap: 16px;
   padding-bottom: 24px;
 }
+.modalImg {
+  width: 100%;
+  background-size: contain;
+  height: 100%;
+}

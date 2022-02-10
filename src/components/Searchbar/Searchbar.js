@@ -1,4 +1,4 @@
-import './Searchbar.css';
+import s from './Searchbar.module.css';
 import { Component } from 'react';
 
 export default class Searchbar extends Component {
@@ -20,14 +20,14 @@ export default class Searchbar extends Component {
   };
   render() {
     return (
-      <header className="searchbar">
-        <form className="form" onSubmit={this.handleSubmit}>
-          <button type="submit" className="form-button">
-            <span className="button-label">Search</span>
+      <header className={s.searchbar}>
+        <form className={s.form} onSubmit={this.handleSubmit}>
+          <button type="submit" className={s.formButton}>
+            <span className={s.buttonLabel}>Search</span>
           </button>
 
           <input
-            className="input"
+            className={s.input}
             type="text"
             autocomplete="off"
             autofocus
